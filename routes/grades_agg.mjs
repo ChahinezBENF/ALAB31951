@@ -1,8 +1,8 @@
-import express from 'express';
-import Grade from '../modules/grade.mjs'; 
+import express from "express";
+
+import Grade from '../models/grade.mjs';
 
 const router = express.Router();
-
 /**
  * Grading Weights by Score Type:
  * - Exams: 50%
