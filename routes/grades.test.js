@@ -10,6 +10,8 @@ const app = express();
 app.use(express.json());
 app.use('/grades', gradesRouter);
 
+
+//Ensure the database connection is established and cleaned up after all tests
 beforeAll(async () => {
   await mongoose.connect(process.env.ATLAS_URI, {
     dbName: 'test_db', // Use a test database
